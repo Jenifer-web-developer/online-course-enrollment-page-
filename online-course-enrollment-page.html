@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>online course enrollment page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Online Course Enrollment Page</h1>
+      <p>Students below you will see the available courses
+        both online and offline. So chosse your preferable course.
+      </p>
+    </header>
+    <main>
+      <table border="1">
+        <caption>Course List</caption>
+        <thead>
+          <tr>
+            <th>Course Name</th>
+            <th>Duration</th>
+            <th>Fees</th>
+            <th>Mode</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>8 months</td>
+            <td>30,000</td>
+            <td>Online</td>
+          </tr>
+          <tr>
+            <td>Application Development</td>
+            <td>12 months</td>
+            <td>50,000</td>
+            <td>Offline</td>
+          </tr>
+          <tr>
+            <td>AI using Python</td>
+            <td>10 months</td>
+            <td>40,000</td>
+            <td>Offline</td>
+          </tr>
+        </tbody>
+      </table>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw?si=uxqqwiwkLn11_Pbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>The above video has introduction
+            to Web Development course.
+          </figcaption>
+        </figure>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/m67-bOpOoPU?si=dc1FairPh-SxnPsK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <figcaption>The above video has introduction
+            to AI using Python course.
+          </figcaption>
+        </figure>
+      <form method="POST" action="">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Eg.John"/>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" minlength="15" maxlength="30" required placeholder="sample@gmail.com"/>
+        <br><br>
+        <label for="course">Choose Course:</label>
+        <select id="course" name="course">
+          <option id="web-development" value="web-development">Web-Development</option>
+          <option id="app-development" value="app-development">Application Development</option>
+          <option id="ai-using-python" value="ai-using-python" selected>AI using Python</option>
+        </select>
+        <br><br>
+        <label>Preferred Batch Time:</label>
+        <input type="radio" id="morning" name="batch-time" value="morning" required/>
+        <label for="morning">Morning</label>
+        <input type="radio" id="evening" name="batch-time" value="evening"/>
+        <label for="evening">Evening</label>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required/>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"/>
+        <label for="female">Female</label>
+        <br><br>
+        <fieldset>
+          <legend>If you have suggestions to improve our course list, please comment below:</legend>
+          <label for="comments">Comments:</label>
+          <br>
+          <textarea id="comments" name="comments" rows="5" cols="25"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p><em>Thank you for choosing our courses! 
+        We’ll contact you soon.</em></p>
+    </footer>
+  </body>
+</html>
